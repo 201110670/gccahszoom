@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="css/mobiletheme.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.3.min.css" />
+	
+<style>
+div.ex{
+    width: 93%;
+    padding: 10px;
+    border: 5px solid gray;
+}#box1{
+
+    width: 93%;
+    padding: 10px;
+    border: 5px solid #fec95f;
+    margin: 0;
+	
+}
+#box{
+
+    width: 90%;
+    padding: 10px;
+    border: 5px solid #fec95f;
+    margin: 0px;
+	height:400px;
+	overflow-y: scroll;
+}
+</style>
+<style>
+        table {
+            text-align: center;
+            font-size: 11px;
+            font-family:Arial, Helvetica, sans-serif;
+            background: #c0c0c0;
+			margin:0px;
+			width:100%;
+			
+        }
+ 
+        table thead tr,
+        table tfoot tr {
+            background: #feca5f;
+			color:black;
+			padding:21px 3% 22px 0%;
+			border-top:1px solid #feca5f;
+			border-bottom:1px solid #feca5f;
+        }
+ 
+        table tbody tr {
+            background: #f0f0f0;
+		
+        }
+ 
+        td, th {
+            border: 1px solid white;
+			padding:16px 0% 17px 0%;
+			color:black;
+        }
+		body {
+    background: url(css/images/bg1.png);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+.ui-page {
+    background: transparent;
+}
+.ui-content{
+    background: transparent;
+}
+    </style>
+</head>
+<body>
+
+<!--admission-->
+<div data-role="page" data-theme="a" id="admission" >
+	<div data-role="header" data-position="fixed" data-tap-toggle="false">
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;"  width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center" style="color:white;">
+ 
+<img src="css/images/admission_1.png"   width="100%"/>
+
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-tap-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a data-theme="a" href="index.html" style="background-color:#fec95f;color:#50703f"><font size="2%">MENU</font></a></li>
+			<li><a href="#req" data-theme="a"  style="background-color:#fec95f;color:#50703f"><font size="2%">REQUIREMENTS</font></a></li>
+			</ul>
+	</div>
+</div>
+</div>
+<!-- /req -->
+
+
+<div data-role="page" data-theme="a" id="req">
+	<div data-role="header" data-position="fixed" data-tap-toggle="false"   >
+			<img src="css/images/header1.png" style="margin-left: auto; margin-right: auto; display: block;"  width="100%"/>
+		</div>
+<div data-role="content" data-theme="a" align="center" style="color:white;">
+
+<img src="css/images/admission_2.png"   width="100%"/>
+</div>
+ <div data-role="footer" data-position="fixed" data-theme="a" data-tap-toggle="false">
+	<div data-role="navbar">
+			<ul>
+			<li><a  data-theme="a" href="index.html" style="background-color:#fec95f;color:#50703f"><font size="2%">MENU</font></a></li>
+			<li><a href="#admission" data-theme="a"  style="background-color:#fec95f;color:#50703f"><font size="2%">PROCEDURE</font></a></li>
+			</ul>
+	</div><!-- /navbar -->
+</div>
+</div>
+
+<!-- /help -->
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.mobile-1.4.3.min.js"></script>
+<script>
+$(document).ready(function(){
+$(".home").click(function(){
+location.href="index.html";
+});
+});
+</script>
+</body>
+</html>
