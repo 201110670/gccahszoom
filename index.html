@@ -431,7 +431,9 @@ div.ex{
   </br>
 <center><img src="css/images/gordoncollege.png"   width="100%"><br>
 <img src="css/images/history_1.png"   width="100%"><br>
+ <span class='zoom' id='exxx3' >
 <img src="css/images/history_2.png"   width="100%">
+</span>
 </center>
 </div>
  <div data-role="footer" data-position="fixed" data-theme="a" data-toggle="false">
@@ -1371,8 +1373,9 @@ $("#fourth2").show();
 	<script>
 		$(document).ready(function(){
 			
-		$('#ex3').zoom({ on:'grab' });
-		$('#exx3').zoom({ on:'grab' });
+		$('#ex3').zoom({on:'click'}).zoom({ on:'grab' });
+		$('#exx3').zoom({ on:'click' }).zoom({ on:'grab' });
+		$('#exxx3').zoom({ on:'click' }).zoom({ on:'grab' });
 		});
 	</script>
 </body>
